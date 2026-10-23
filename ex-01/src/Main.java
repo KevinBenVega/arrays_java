@@ -5,11 +5,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        float[] dades = new float[5];
+        int[] dades = new int[5];
 
         for (int i = 0; i < dades.length; i++){
             System.out.println("Ingrese el numero " + i);
-            float num = sc.nextFloat();
+            int num = sc.nextInt();
             dades[i] = num;
         }
 
