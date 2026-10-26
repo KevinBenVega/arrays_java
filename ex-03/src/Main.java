@@ -5,16 +5,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int[] nombres = new int[5];
+        int sumaNombres = 0;
 
         for (int i = 0; i < nombres.length; i++){
             System.out.println("Ingrese el numero " + i);
             int num = sc.nextInt();
             nombres[i] = num;
-        }
-
-        int sumaNombres = 0;
-
-        for (int i = 0; i < nombres.length; i++){
             sumaNombres += nombres[i];
         }
 
