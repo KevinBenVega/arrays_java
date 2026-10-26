@@ -5,31 +5,23 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int[] array1 = new int[8];
+        int[] nombres = new int[8];
         int numPositivos = 0;
         int numNegativos = 0;
         int numCeros = 0;
 
-        for (int i = 0; i < array1.length; i++){
+        for (int i = 0; i < nombres.length; i++){
             System.out.println("Ingrese el numero " + i);
             int num = sc.nextInt();
-            array1[i] = num;
+            nombres[i] = num;
         }
 
-        for (int i = 0; i < array1.length; i++){
-            if (array1[i] > 0) {
+        for (int i = 0; i < nombres.length; i++){
+            if (nombres[i] > 0) {
                 numPositivos += 1;
-            }
-        }
-
-        for (int i = 0; i < array1.length; i++) {
-            if (array1[i] < 0) {
+            } else if (nombres[i] < 0) {
                 numNegativos += 1;
-            }
-        }
-
-        for (int i = 0; i < array1.length; i++) {
-            if (array1[i] == 0) {
+            } else {
                 numCeros += 1;
             }
         }
