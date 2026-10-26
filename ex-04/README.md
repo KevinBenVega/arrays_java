@@ -18,6 +18,7 @@ INICI
             numNegativos <- numNegativos + 1
         SINO
             numCeros <- numCeros + 1
+        FISI
     FIPER
     
     ESCRIURE("Positivos: ", numPositivos)
